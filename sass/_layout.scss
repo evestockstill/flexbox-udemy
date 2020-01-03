@@ -6,6 +6,8 @@
   min-height: 50rem;
   @media only screen and (max-width: $bp-largest) {
     margin: 0;
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -20,6 +22,9 @@
 }
 .content {
   display: flex;
+  @media screen and (max-width: $bp-med) {
+    flex-direction: column;
+  }
 }
 .sidebar {
   background: var(--color-grey-dark-1);
@@ -39,6 +44,9 @@
   padding: 4.5rem;
   background: var(--color-grey-light-1);
   border-bottom: var(--line);
+  @media screen and (max-width: $bp-med) {
+      padding: 2.5rem;
+    }
 }
 .description {
   background: #fff;
